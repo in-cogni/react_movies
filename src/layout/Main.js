@@ -2,6 +2,7 @@ import React from 'react';
 import Preloader from '../components/Preloader.js';
 import MovieList from '../components/MovieList.js';
 import Search from './Search.js';
+// import Search1 from '../components/Search1.js';
 import './Main.css';
 
 class Main extends React.Component {
@@ -21,11 +22,12 @@ class Main extends React.Component {
                 });
                 console.error('Ошибка ПРОВЕРКА', error);
             });
-    }
+        }
+
 
     render() {
         return (
-            <div className='main'>
+            <div className='main' >
                 <Search onSearch={this.searchMovies} />
                 <div className='wrap'>
                     {
